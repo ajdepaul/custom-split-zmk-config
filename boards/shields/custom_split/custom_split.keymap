@@ -8,11 +8,11 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp &studio_unlock &kp K              &kp K              &kp K              &kp K              &kp K                            &kp K              &kp K              &kp K              &kp K              &kp K              &kp K
-                &kp K              &kp K              &kp K              &kp K              &kp K              &kp K                            &kp K              &kp K              &kp K              &kp K              &kp K              &kp K
-                &kp K              &kp K              &kp K              &kp K              &kp K              &kp K                            &kp K              &kp K              &kp K              &kp K              &kp K              &kp K
-                &kp K              &kp K              &kp K              &kp K              &kp K              &kp K                            &kp K              &kp K              &kp K              &kp K              &kp K              &kp K
-                &kp K              &kp K              &kp K              &kp K              &kp K              &kp K                            &kp K              &kp K              &kp K              &kp K              &kp K              &kp K
+                &studio_unlock &kp K          &kp K          &kp K          &kp K          &kp K                    &kp K          &kp K              &kp K          &kp K              &kp K          &kp K
+                &kp K          &kp K          &kp K          &kp K          &kp K          &kp K                    &kp K          &kp K              &kp K          &kp K              &kp K          &kp K
+                &kp K          &kp K          &kp K          &kp K          &kp K          &kp K                    &kp K          &kp K              &kp K          &kp K              &kp K          &kp K
+                &kp K          &kp K          &kp K          &kp K          &kp K          &kp K                    &kp K          &kp K              &kp K          &kp K              &kp K          &kp K
+                &kp K          &kp K          &kp K          &kp K          &kp K          &kp K                    &kp K          &kp K              &kp K          &kp K              &kp K          &kp K
             >;
         };
     };
