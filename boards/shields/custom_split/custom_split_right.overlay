@@ -33,3 +33,7 @@
         };
     };
 };
+
+&nice_view_spi {
+    cs-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+};
