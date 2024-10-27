@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define QWERTY  0
-#define COLEMAK 1
+#define DEFAULT 0
+#define QWERTY  1
 #define FN1     2
 #define FN2     3
 #define FN3     4
@@ -87,17 +87,6 @@
         compatible = "zmk,keymap";
 
         default {
-            display-name = "qwerty";
-            bindings = <
-                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp INS
-                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T          &kp Y     &kp U     &kp I     &kp O     &kp P     &kp HOME
-                &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp RET
-                &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp END
-                                    &kp LALT  &mo FN2   &mo FN1   &kp SPACE      &kp RSHFT &kp BSPC  &kp DEL   &kp LWIN
-            >;
-        };
-
-        colemak {
             display-name = "colemak";
             bindings = <
                 &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp INS
@@ -108,12 +97,23 @@
             >;
         };
 
+        qwerty {
+            display-name = "qwerty";
+            bindings = <
+                &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp INS
+                &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T          &kp Y     &kp U     &kp I     &kp O     &kp P     &kp HOME
+                &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G          &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp RET
+                &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B          &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp END
+                                    &kp LALT  &mo FN2   &mo FN1   &kp SPACE      &kp RSHFT &kp BSPC  &kp DEL   &kp LWIN
+            >;
+        };
+
         fn1 {
             display-name = "fn1";
             bindings = <
                 &trans    &kp F1    &kp F2    &kp F3    &kp F4    &kp F5         &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
                 &trans    &kp GRAVE &kp TILDE &kp EXCL  &kp AT    &vej           &trans    &kp MINUS &kp UNDER &kp EQUAL &kp PLUS  &kp F12
-                &trans    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &vet           &trans    &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &tog COLEMAK
+                &trans    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &vet           &trans    &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &tog QWERTY
                 &kp CAPS  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &vel           &trans    &kp APOS  &kp DQT   &kp BSLH  &kp PIPE  &trans
                                     &trans    &mo FN3   &trans    &trans         &trans    &trans    &trans    &trans
             >;
