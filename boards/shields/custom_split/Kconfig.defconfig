@@ -6,6 +6,10 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config CONFIG_ZMK_STUDIO
+    default y
+
 endif
 
 if SHIELD_CUSTOM_SPLIT_LEFT || SHIELD_CUSTOM_SPLIT_RIGHT
