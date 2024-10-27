@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &nice_view_spi {
-    mosi-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>
-    sck-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>
-    cs-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>
+    mosi-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+    sck-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
 };
