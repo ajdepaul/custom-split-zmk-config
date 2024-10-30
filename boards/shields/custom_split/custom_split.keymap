@@ -10,7 +10,7 @@
 #define FN2     3
 #define FN3     4
 
-left
+// left
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
