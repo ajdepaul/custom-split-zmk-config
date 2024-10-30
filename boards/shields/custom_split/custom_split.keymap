@@ -123,10 +123,10 @@
             display-name = "fn2";
             bindings = <
                 &trans      &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans      &trans          &trans
-                &trans      &trans      &kp HOME    &kp UP      &kp END     &trans            &kp KP_NUM  &kp KP_N7   &kp KP_N8   &kp KP_N9   &trans          &kp C_NEXT
+                &trans      &trans      &kp HOME    &kp UP      &kp END     &trans            &kp KP_NUM  &kp KP_N7   &kp KP_N8   &kp KP_N9   &trans          &kp C_PREV
                 &trans      &kp PG_UP   &kp LEFT    &kp DOWN    &kp RIGHT   &trans            &kp KP_PLUS &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MULTIPLY &kp C_PLAY_PAUSE
-                &trans      &kp PG_DN   &trans      &trans      &trans      &trans            &kp KP_MINUS &kp KP_N1  &kp KP_N2   &kp KP_N3   &kp KP_SLASH    &kp C_PREV
-                                        &trans      &trans      &mo FN3     &trans            &kp KP_N0   &kp KP_DOT  &trans      &trans
+                &trans      &kp PG_DN   &trans      &trans      &trans      &trans            &kp KP_MINUS &kp KP_N1  &kp KP_N2   &kp KP_N3   &kp KP_SLASH    &kp C_NEXT
+                                        &trans      &trans      &mo FN3     &trans            &trans      &kp KP_N0   &kp KP_DOT  &trans
             >;
         };
 
