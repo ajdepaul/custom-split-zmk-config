@@ -1,5 +1,4 @@
 #include "custom_split.dtsi" // The shared dtsi file is included in the overlay
-#include <physical_layouts.dtsi>
 
 // Label of the kscan node in the dtsi
 &kscan0 {
@@ -41,7 +40,7 @@ nice_view_spi: &spi0 {
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio 17 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
 };
 
 &pro_micro_i2c {
