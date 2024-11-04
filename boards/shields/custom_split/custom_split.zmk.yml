@@ -5,8 +5,9 @@ type: shield
 url: https://github.com/ajdepaul/custom-split-zmk-config
 requires:
   - pro_micro
-  - nice_view_header
-exposes: []
+  # - nice_view_header
+  - i2c_oled
+exposes: [nice_view_header]
 features:
   - keys
   - display
